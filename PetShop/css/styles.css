@@ -18,6 +18,8 @@
     
 }
 
+    
+
 /*Header*/
 
 #top-header{
@@ -27,7 +29,7 @@
     background-color: var(--main);
     color: var(--secondary);
     height: 3vh;
-    font-size: 10px;
+    font-size: 12px;
 
 }
 #top-header p{
@@ -49,11 +51,24 @@
     height: 12vh;
     padding: 0 3rem;
 }
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 2rem;
+}
+#logo-header-uno{
+    color: var(--main);
+}
+#logo-header-dos{
+    color: var(--secondary);
+}
 nav ul li{
     margin-left: 1rem;
     list-style: none;
     display: inline;
-    font-size: 13px;
+    font-size: 15.6px;
 }
 nav ul li a{
     text-decoration: none;
@@ -63,6 +78,7 @@ nav ul li a{
 nav ul li a img{
     margin-right: .3rem;
 }
+
 #banner{
     background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
     background-size: cover;
@@ -70,23 +86,24 @@ nav ul li a img{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 1rem;
+    
     
 }
 #banner-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 10vw;
 }
 #banner-text h1{
     padding: 0.5rem 1rem;
     border-radius: 5px;
     background-color: var(--secondary);
     color: var(--main);
-    font-size: 30px;
+    font-size: 36px;
 }
 #banner-text P{
-    font-size: 16px;
+    font-size: 19px;
     margin: 1rem 0;
 }
 #banner-text a{
@@ -94,7 +111,7 @@ nav ul li a img{
     padding: 1rem 2rem;
     background-color: var(--tertiary);
     color: var(--secondary);
-    font-size: 16px;
+    font-size: 19px;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -102,20 +119,24 @@ nav ul li a img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--main);
-    margin: 2rem 0;
+    margin: 2rem 0rem;
 }
 #product-categories img{
-    width: 70px;
+    width: 6rem;
+    color: var(--tertiary);
 }
 #product-categories h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
+    color: var(--main);
+    margin-bottom:2rem;
 }
 #product-categories ul li{
     display: inline;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 18px;
+    color:  #666666;
+    
 }
 #cards{
     display: flex;
@@ -127,12 +148,11 @@ nav ul li a img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #FAF9F5;
 }
 .card p{
-    color: var(--main);
-    
+    color: var(--main);    
 }
 .card span{
     color: var(--tertiary);
@@ -144,7 +164,7 @@ nav ul li a img{
     margin: 6rem;
 }
 #form h2{
-    font-size: 25px;
+    font-size: 30px;
     margin: 1rem;
 }
 #data{
@@ -202,6 +222,7 @@ footer{
 #suscription-title h3{
     color: var(--secondary);
     margin-left: 15px;
+    font-size: 24px;
 }
 #suscription-inputs input,button{
     border: none;
@@ -218,7 +239,7 @@ footer{
     color: var(--secondary);
     height: 34px;
     width: 70px;
-    font-size: 9px;
+    font-size: 11px;
 }
 #data-company-container{
     display: flex;
@@ -237,8 +258,11 @@ footer{
     display: flex;
     margin: 1rem 0;
 }
-.data-company-items img{
-    width: 66px;
+#logo-footer-uno{
+    color: var(--secondary);
+}
+#logo-footer-dos{
+    color: var(--tertiary);
 }
 .data-company-items div{
     color: var(--secondary);
@@ -249,7 +273,8 @@ footer{
     background-color: #222222;
     color: var(--secondary);
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
+    padding: .2rem;
 }
 
 
