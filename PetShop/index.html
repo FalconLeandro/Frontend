@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header>
       <div id="top-header">
         <p>Grandes ofertas en comederos</p>
-        <ul>
-          <li>Español</li>
-          <li>ARG$</li>
-        </ul>
+        <div>
+          <select name="languagge" class="select">
+            <option value="0">Español</option>
+            <option value="1">English</option>
+            <option value="2">German</option>
+          </select>
+          <select name="moneda" class="select">
+            <option value="0">$AR</option>
+            <option value="0">U$S</option>
+          </select>
+        </div>
+        
+        
       </div>
       <div id="header">
         <div class="logo">
@@ -46,6 +57,7 @@
     </header>
     <main>
       <section id="banner">
+        
         <div id="banner-text">
           <h1>¡Es un placer tenerte aquí!</h1>
           <p>¡Comederos con descuento!</p>
@@ -83,7 +95,7 @@
       </section>
       
       <section id="form">
-        <h2>Contactanos</h2>
+        <h2>Contáctanos</h2>
         <form action="">
           <div id="data">
             <input type="text" placeholder="Nombre y Apellido" />
@@ -108,6 +120,7 @@
         </div>
       </div>
       <div id="data-company-container">
+        <div id="container"></div>
         <div id="data-company">
           <div class="data-company-items">
             <img src="img/Icono.svg" alt="Icono" />

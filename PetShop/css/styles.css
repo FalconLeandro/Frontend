@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 
 /*Variables para los colores*/
 
@@ -26,8 +26,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main);
-    color: var(--secondary);
+    background-color: #222222;
+    color: #f3f3f3;
     height: 3vh;
     font-size: 12px;
 
@@ -35,13 +35,16 @@
 #top-header p{
     padding-left: 6rem;
 }
-#top-header ul{
-    padding-right: 3rem;
+#top-header div{
+    margin-right: 3rem;
 }
-#top-header ul li{
-    margin-left: 1rem;
-    list-style: none;
+
+.select{
+    margin-right: 1rem;
+    border: 0px;
     display: inline;
+    background-color: #222222;
+    color: #FAF9F5;
 }
 #header{
     display: flex;
@@ -54,9 +57,14 @@
 .logo{
     display: flex;
     align-items: center;
+    font-size: .8rem;
+    z-index: 2;
+}
+.logo h1{
+    
 }
 .logo img{
-    width: 2rem;
+    width: 1.5rem;
 }
 #logo-header-uno{
     color: var(--main);
@@ -76,12 +84,14 @@ nav ul li a{
     
 }
 nav ul li a img{
-    margin-right: .3rem;
+    margin-right: .2rem;
+    width: 1.2rem;
 }
 
 #banner{
     background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
     background-size: cover;
+    
     height: 85vh;
     display: flex;
     align-items: center;
@@ -89,18 +99,29 @@ nav ul li a img{
     
     
 }
+#container{
+    position: absolute;
+    left: 0;
+    
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to left, #180e08, transparent);
+    z-index: 1;
+}
 #banner-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10vw;
+    
 }
 #banner-text h1{
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: var(--secondary);
     color: var(--main);
     font-size: 36px;
+    font-weight: 400;
 }
 #banner-text P{
     font-size: 19px;
@@ -112,7 +133,7 @@ nav ul li a img{
     background-color: var(--tertiary);
     color: var(--secondary);
     font-size: 19px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-transform: uppercase;
 }
 #product-categories{
@@ -122,7 +143,7 @@ nav ul li a img{
     margin: 2rem 0rem;
 }
 #product-categories img{
-    width: 6rem;
+    width: 5rem;
     color: var(--tertiary);
 }
 #product-categories h2{
@@ -136,6 +157,7 @@ nav ul li a img{
     font-size: 18px;
     line-height: 18px;
     color:  #666666;
+    font-weight: 400;
     
 }
 #cards{
@@ -143,16 +165,23 @@ nav ul li a img{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 6rem;
+    flex-wrap: wrap;
 }
 .card{
     display: flex;
+    
     flex-direction: column;
     align-items: center;
     font-size: 18px;
     background-color: #FAF9F5;
+    width: 25vw;
+}
+.card img{
+    width: fit-content;
 }
 .card p{
-    color: var(--main);    
+    color: var(--main);
+    font-weight: bold;   
 }
 .card span{
     color: var(--tertiary);
@@ -166,6 +195,7 @@ nav ul li a img{
 #form h2{
     font-size: 30px;
     margin: 1rem;
+    font-weight: 700;
 }
 #data{
     
@@ -175,12 +205,14 @@ nav ul li a img{
 }
 #data input{
     border: none;
-    width: 340px;
-    height: 40px;
+    width: 430px;
+    height: 50px;
     margin: 0.3rem;
     background-color: var(--main);
-    border-radius: 15px;
+    border-radius: 20px;
     padding-left: 1rem;
+    color: #f3f3f3;
+    
     
 }
 #data input::placeholder{
@@ -189,12 +221,14 @@ nav ul li a img{
 }
 #form form button{
     border: none;
-    width: 110px;
-    height: 34px;
+    width: 130px;
+    height: 44px;
     margin: 0.5rem;
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--secondary);
     margin-top:2rem ;
+    font-size: 19px;
+    cursor: pointer;
 }
 #reset{
     background-color: #8A8787;
@@ -204,14 +238,14 @@ nav ul li a img{
     background-color: var(--tertiary);
 }
 footer{
-    height: 70vh;
+    height: 65vh;
 }
 #suscription{
     display: flex;
     background-color: var(--tertiary);
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 65px;
     padding: 0 3rem;
 }
 #suscription-title{
@@ -226,19 +260,19 @@ footer{
 }
 #suscription-inputs input,button{
     border: none;
-    border-radius: 15px;
-
+    border-radius: 20px;
+    cursor: pointer;
 }
 #suscription-inputs input{
-    height: 40px;
-    width: 270px;
+    height: 45px;
+    width: 350px;
     padding-left: 15px;
 }
 #suscription-inputs button{
     background-color: var(--main);
     color: var(--secondary);
-    height: 34px;
-    width: 70px;
+    height: 40px;
+    width: 80px;
     font-size: 11px;
 }
 #data-company-container{
@@ -246,17 +280,28 @@ footer{
     justify-content: space-between;
     background-color: var(--main);
     align-items: center;
-    height: 65vh;
+    height: 60vh;
     padding: 0 6rem;
 }
 #data-company{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 2;
 }
 .data-company-items{
     display: flex;
     margin: 1rem 0;
+}
+.data-company-items img{
+    width: 5rem;
+}
+.data-company-items h3{
+    font-size: 1.5rem;
+}
+.data-company-items p{
+    color:  #8A8787;
+    font-size: .8rem;
 }
 #logo-footer-uno{
     color: var(--secondary);
