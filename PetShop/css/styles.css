@@ -315,7 +315,7 @@ button {
   font-size: 0.8rem;
 }
 
-/*Footer - Logo( uso la clase logo del Header)*/
+/*Footer - Logo( uso la misma clase "logo" del Header)*/
 
 #logo-footer-uno {
   color: var(--secondary);
@@ -328,7 +328,7 @@ button {
   margin-left: 3rem;
 }
 
-/*Footer - Copyright*/
+/*Footer - Copyrights*/
 
 #rights {
   background-color: #222222;
@@ -341,6 +341,7 @@ button {
   
 }
 
+/*Fixed-Logo (Enlace a mi portfolio)*/
 
 #sticky{
     width: 8rem;
@@ -348,21 +349,27 @@ button {
     position: fixed;
     bottom: 50px;
     right: -10vw;
+    opacity: .8;
 }
+#sticky:hover{
+  opacity: 1!important;
+}
+
+/*Fixed-Logo Animations*/
 
 @keyframes rolling-in {
     0% {
       transform: translateX(0px) rotate(0deg);
     }
     100% {
-      transform: translateX(-55vw) rotate(-720deg);
+      transform: translateX(-53.5vw) rotate(-720deg);
     }
 }
 @keyframes rolling-back {
     0% {
-        transform: translateX(-55vw) rotate(-720deg);
+        transform: translateX(-53.5vw) rotate(-720deg);
     }
     100% {
-        transform: translateX(0px) rotate(0deg);
+        transform: translateX(-23vw, 500px) rotate(0deg);
     }
 }
