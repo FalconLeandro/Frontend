@@ -72,6 +72,9 @@ i{
 .fa-dog{
     color: #3BDBFF;
 }
+.fa-circle-question{
+    color: 	#3b79ff;
+}
 i:hover{
     transform: scale(1.2);
     transition-duration: .5s;
@@ -89,7 +92,7 @@ i:hover{
     font-size: 6rem;
 } */
 h2{
-   color:#FFD43B;
+   color:#fdf4d0;
    
    margin: 1rem 3rem;
    font-weight: 600;
@@ -99,9 +102,19 @@ h2:hover{
     transition-duration: .5s;
 
 }
-.tools-container{
-    margin-top: 1rem;
-    height: 200px!important;
+#container div div div{
+    margin-top: 3rem;
+    height: 62px;
+    padding: 1.5rem 3rem;
+    background-color: rgba(0,0,0,.1)
+}
+#container div div div span{
+    background-color: #27BCC0;
+    color: #1B766B;
+    border-radius: 2px;
+    padding: 2px 6px;
+    font-weight: bold;
+    
 }
 .tools{
     font-size: 2rem;
