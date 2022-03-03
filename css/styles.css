@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    
+}
+h1{
+    color: white;
+    padding-top:3rem ;
+    font-weight: 300;
+    font-size: 4rem;
+    /* background: linear-gradient(to right,#FFD43B,#3BDBFF);
+    -webkit-background-clip: text;
+     color: transparent;  */
+
+    
+}
+
+#end{
+    color: #FFD43B;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8rem  8rem  8rem; 
+    width: 100vw;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    
+    
+}
+#container div{
+    width: 14rem;
+    height: 60px;
+    background-color: rgba(0,0,0,.2);
+    font-weight: 300;
+    overflow: hidden;
+    border-radius: 0 0 15px 15px;
+}
+#container div div{
+    height: 300px;
+}
+
+#container div:hover{
+    
+    height: 300px;
+    transition: all;
+    transition-duration: 1s;
+}
+i{
+    margin-top: 3rem;
+    width: 100px;
+    
+    font-size: 5rem;
+}
+.fa-lemon{
+    color:#FFD43B;
+}
+.fa-dog{
+    color: #3BDBFF;
+}
+i:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+
+/* #container div:hover::after{
+    content:'\f094';
+    color: white;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 500;
+    padding: 4rem;
+    padding-top: 1rem;
+    background-color: #FFD43B;
+    border-radius: 20px;
+    font-size: 6rem;
+} */
+h2{
+   color:#FFD43B;
+   
+   margin: 1rem 3rem;
+   font-weight: 600;
+}
+h2:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+
+}
+.tools-container{
+    margin-top: 1rem;
+    height: 200px!important;
+}
+.tools{
+    font-size: 2rem;
+    color: #FFD43B;
+}
+iframe{
+    position: absolute;
+}
+
