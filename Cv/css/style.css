@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3,h1{
+    background: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: .5rem 1rem ;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E6E6;
+    padding: 1.5rem 0;
+}
+main{
+    padding-bottom: 6rem;
+}
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+main{
+    font-size: 1.rem;
+}
+ul, dl{
+    list-style-type: disc;
+    margin: 2rem 0 2rem  3rem;
+}
+ul li span{
+    font-style: italic;
+}
+span{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    background: #005677;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer a img{
+    margin: .2rem .8rem;
+    align-items: center;
+}
+

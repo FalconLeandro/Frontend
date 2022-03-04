@@ -69,11 +69,12 @@ i{
 .fa-lemon{
     color:#FFD43B;
 }
+
 .fa-dog{
     color: #3BDBFF;
 }
 .fa-circle-question{
-    color: 	#3b79ff;
+    color: 	#ff3b79 ;
 }
 i:hover{
     transform: scale(1.2);
@@ -92,7 +93,7 @@ i:hover{
     font-size: 6rem;
 } */
 h2{
-   color:#fdf4d0;
+   color: white;
    
    margin: 1rem 3rem;
    font-weight: 600;
@@ -106,10 +107,11 @@ h2:hover{
     margin-top: 3rem;
     height: 62px;
     padding: 1.5rem 3rem;
-    background-color: rgba(0,0,0,.1)
+    /* background-color: rgba(0,0,0,.1) */
+    background-color: transparent;
 }
 #container div div div span{
-    background-color: #27BCC0;
+    background-color: #FFD43B;
     color: #1B766B;
     border-radius: 2px;
     padding: 2px 6px;
