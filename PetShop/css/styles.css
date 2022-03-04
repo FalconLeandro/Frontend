@@ -367,9 +367,9 @@ button {
 }
 @keyframes rolling-back {
     0% {
-        transform: translateX(-53.5vw) rotate(-720deg);
+        transform: translateX(-53.5vw) rotate(720deg);
     }
     100% {
-        transform: translateX(-23vw, 500px) rotate(0deg);
+        transform: translateX(-83vw, 500px) rotate(0deg);
     }
 }
