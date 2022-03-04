@@ -76,6 +76,10 @@ i{
 .fa-circle-question{
     color: 	#ff3b79 ;
 }
+.fa-mask{
+    color: #3bffc1;
+}
+
 i:hover{
     transform: scale(1.2);
     transition-duration: .5s;
