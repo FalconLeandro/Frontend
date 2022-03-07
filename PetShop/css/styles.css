@@ -43,7 +43,9 @@
   color: #faf9f5;
   cursor: pointer;
 }
-
+ .select:hover{
+   background: var(--main);
+ }
 /*Header*/
 
 #header {
@@ -75,7 +77,7 @@
 /*Header - Menu-Nav*/
 
 nav ul li {
-  margin-left: 1rem;
+  
   list-style: none;
   display: inline;
   font-size: 15.6px;
@@ -83,10 +85,24 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: var(--secondary);
+  padding: 1.7rem .5rem;
 }
 nav ul li a img {
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
   width: 1.2rem;
+}
+
+nav ul li a:hover img{
+  transition-duration: .5s;
+  transform: scale(1.4);
+  color: #3c2313;
+}
+
+nav ul li a:hover {
+  transition-duration: .5s;
+  transform: scale(1.4);
+  color: #3c2313;
+  background: rgba(60, 35, 19,.2);
 }
 
 /*Main - Banner*/
@@ -125,6 +141,12 @@ nav ul li a img {
   font-size: 19px;
   border-radius: 8px;
   text-transform: uppercase;
+}
+#banner-text a:hover {
+  transform: scale(1.1);
+  transition-duration: .5s;
+  background-color: #3c2313;
+  color: #f0a83e;
 }
 
 /*Main - Section Categories*/
@@ -171,6 +193,12 @@ nav ul li a img {
   font-size: 18px;
   background-color: #faf9f5;
   margin: 1.5rem 0;
+  border-radius: 25px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition-duration: .5s;
+  border: #f0a83e solid 1px ;
 }
 .card img {
   width: fit-content;
