@@ -77,14 +77,11 @@ i{
 .fa-dog{
     color: #3BDBFF;
 }
-.fa-circle-question{
-    color: 	#ff3b79 ;
-}
 .fa-mask{
-    color: #3bffc1;
+    color: #ff3b79;
 }
 .fa-file-lines{
-    color: #ff3b79;
+    color: #3bffc1;
 }
 
 
@@ -158,29 +155,30 @@ iframe{
 .fa-sun{
     color: white;
 }
-/* .fa-sort{
+.fa-sort{
     position: absolute;
     cursor: pointer;
     color:white;
-    right: 4rem;
+    right: 6rem;
     top: 2rem;
     z-index: 999;
-    font-size: 2rem;
-} */
+    font-size: 1.8rem;
+    width: 40px;
+}
 .dark{
     background: linear-gradient(to right, #000000, #434343); 
 }
 .cards-expand{
     
-    width: 14rem;
-    background-color: rgba(0,0,0,.2);
-    font-weight: 300;
-    border-radius: 0 0 15px 15px;
-    -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
-    z-index: 999;
+    /* width: 14rem!important;
+    background-color: rgba(0,0,0,.2)!important;
+    font-weight: 300!important;
+    border-radius: 0 0 15px 15px!important;
+    -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2))!important;
+    z-index: 999!important; */
     height: 300px !important;
-    transition: all;
-    transition-duration: 1s;
+    transition: all!important;
+    transition-duration: 1s!important; 
 }
 /* #btn:checked #label i{
     content: "\f185";

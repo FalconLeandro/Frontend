@@ -15,10 +15,9 @@ function bgChanger() {
 function cardChanger() {
     var card = document.querySelectorAll(".card");
     console.log(card);
-    card.classList.toggle('cards-expand');
+    card.forEach(element => {
+        element.classList.toggle('cards-expand');
+        
+    });
     
-    
-
-    
-
 }
