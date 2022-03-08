@@ -101,7 +101,7 @@ nav ul li a:hover img{
 nav ul li a:hover {
   transition-duration: .5s;
   transform: scale(1.4);
-  color: #3c2313;
+  color: #A5DAB8;
   background: rgba(60, 35, 19,.2);
 }
 
