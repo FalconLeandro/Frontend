@@ -83,6 +83,10 @@ i{
 .fa-mask{
     color: #3bffc1;
 }
+.fa-file-lines{
+    color: #ff3b79;
+}
+
 
 i:hover{
     transform: scale(1.2);
