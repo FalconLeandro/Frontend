@@ -1,7 +1,7 @@
 # PetShop
 
 
-![Vista Previa](img/pawprint 1.svg)
+![Vista Previa](img/unknown.png)
 
 
 

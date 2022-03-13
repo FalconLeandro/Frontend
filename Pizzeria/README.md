@@ -1,7 +1,7 @@
 # PizzaFront
 
 
-![Vista Previa](img/VectorPizza.svg)
+![Vista Previa](img/unknown.png)
 
 
 

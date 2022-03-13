@@ -1,7 +1,7 @@
 # Heroes
 
 
-![Vista Previa](img/liga-justicia-batman-kO4H--1024x512@abc 1 (2).svg)
+![Vista Previa](img/unknown.png)
 
 
 
