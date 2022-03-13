@@ -1,7 +1,7 @@
-# LemonPie
+# PetShop
 
 
-![Vista Previa](img/unknown.png)
+![Vista Previa](img/pawprint 1.svg)
 
 
 

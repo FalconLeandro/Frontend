@@ -1,7 +1,7 @@
-# LemonPie
+# Lemon Pie
 
 
-![Vista Previa](img/unknown.png)
+![Vista Previa](img/lemon-pie 1.jpg)
 
 
 
