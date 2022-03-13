@@ -1,7 +1,7 @@
 # LemonPie
 
 
-![Vista Previa](img/unknown.png)
+https://c.tenor.com/ysB3IoTeKT8AAAAC/thank-you.gif
 
 
 
