@@ -54,7 +54,7 @@
   align-items: center;
   background-color: var(--tertiary);
   height: 12vh;
-  padding: 0 3rem;
+  padding: 0 10%;
 }
 
 /*Header - Logo*/
@@ -105,6 +105,14 @@ nav ul li a:hover {
   background: rgba(60, 35, 19,.2);
 }
 
+/*Header - Hamburguer-Menu*/
+
+#hamburguer{
+  color: var(--secondary);
+  display: none;
+  font-size: 1.5rem;
+}
+
 /*Main - Banner*/
 
 #banner {
@@ -128,6 +136,7 @@ nav ul li a:hover {
   color: var(--main);
   font-size: 36px;
   font-weight: 400;
+  text-align: center;
 }
 #banner-text P {
   font-size: 19px;
@@ -166,6 +175,7 @@ nav ul li a:hover {
   font-weight: bold;
   color: var(--main);
   margin-bottom: 2rem;
+  text-align: center;
 }
 #product-categories ul li {
   display: inline;
@@ -180,10 +190,10 @@ nav ul li a:hover {
 #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 6rem;
+  justify-content:center;
+  margin: 0 10%;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 5%;
 }
 .card {
   display: flex;
@@ -217,7 +227,7 @@ nav ul li a:hover {
   text-align: center;
   align-items: center;
   color: var(--main);
-  margin: 6rem;
+  margin: 10%;
 }
 #form h2 {
   font-size: 30px;
@@ -273,8 +283,7 @@ footer {
   background-color: var(--tertiary);
   justify-content: space-between;
   align-items: center;
-  height: 65px;
-  padding: 0 3rem;
+  padding: 2% 5%;
 }
 #suscription-title {
   display: flex;
@@ -292,7 +301,7 @@ button {
 }
 #suscription-inputs input {
   height: 45px;
-  width: 350px;
+  width: 65vw;
   padding-left: 15px;
 }
 #suscription-inputs button {
@@ -312,16 +321,16 @@ button {
   background-color: var(--main);
   align-items: center;
   height: 60vh;
-  padding:  0 15vw 0 6rem;
+  padding:  5% 5%;
 }
-#container {
-    position: absolute;
+/* #container {
+    
     left: 0;
     width: 100%;
-    height: 60vh;
+    height: 100%;
     background: linear-gradient(to left, #180e08, transparent);
     z-index: 1;
-  }
+  } */
 #data-company {
   display: flex;
   flex-direction: column;
@@ -373,11 +382,10 @@ button {
 
 #sticky{
     width: 8rem;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     bottom: 50px;
     right: -10vw;
-    opacity: .8;
 }
 #sticky:hover{
   opacity: 1!important;
@@ -399,5 +407,31 @@ button {
     }
     100% {
         transform: translateX(-83vw, 500px) rotate(0deg);
+    }
+}
+@media only screen and (max-width: 768px){
+    #header nav{
+      display: none;
+    }
+    #hamburguer{
+      display: block;
+    }
+    #top-header{
+      display: none;
+    }
+    .logo{
+      font-size: 85%;
+    }
+    #data input {
+      width: 90vw;
+    }
+    #suscription{
+      flex-direction: column;
+    }
+    #contact {
+      flex-direction: column;
+    }
+    #data-company{
+      order: 2;
     }
 }
