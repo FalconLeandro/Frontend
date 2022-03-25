@@ -111,6 +111,7 @@ nav ul li a:hover {
   color: var(--secondary);
   display: none;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /*Main - Banner*/
@@ -141,6 +142,7 @@ nav ul li a:hover {
 #banner-text P {
   font-size: 19px;
   margin: 1rem 0;
+  text-align: center;
 }
 #banner-text a {
   text-decoration: none;
@@ -212,6 +214,7 @@ nav ul li a:hover {
 }
 .card img {
   width: fit-content;
+  border-radius: 25px;
 }
 .card p {
   color: var(--main);
@@ -294,6 +297,9 @@ footer {
   margin-left: 15px;
   font-size: 24px;
 }
+#suscription-inputs{
+
+}
 #suscription-inputs input,
 button {
   border: none;
@@ -301,8 +307,10 @@ button {
 }
 #suscription-inputs input {
   height: 45px;
-  width: 65vw;
-  padding-left: 15px;
+  width: 300px;
+  padding-left: 4%;
+  font-size: .8rem;
+
 }
 #suscription-inputs button {
   background-color: var(--main);
@@ -339,10 +347,10 @@ button {
 }
 .data-company-items {
   display: flex;
-  margin: 1rem 0;
+  margin: 2% 0;
 }
 .data-company-items img {
-  width: 5rem;
+  width: 4rem;
 }
 .data-company-items h3 {
   font-size: 1.5rem;
@@ -424,6 +432,14 @@ button {
     }
     #data input {
       width: 90vw;
+    }
+    #banner-text h1 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    #suscription-inputs input {
+      width: 60vw;
+      font-size: .8rem;
     }
     #suscription{
       flex-direction: column;

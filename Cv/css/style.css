@@ -20,7 +20,11 @@ header{
     background-color: #E6E6E6;
     padding: 1.5rem 0;
 }
-
+header a img:hover{
+    transform: rotate(720deg);
+    transition:1s;
+    transition-property: all;
+}
 /*Main*/
 
 main{
