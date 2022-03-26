@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
 *{
     box-sizing: border-box;
-    left: 0;
-    top: 0;
+    margin: 0;
+    padding: 0;
     font-family: 'Be Vietnam Pro', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    color: #242D52;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 10%;
+    padding: 3% 12%;
 }
-nav ul{
+header img{
+    width: 120px;
+}
+header nav ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
     width: 100%;
+    font-size: .7rem;
 }
-nav{
+header nav{
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -27,20 +34,110 @@ button{
     border-radius: 50px;
     background: #F3603B;
     color: white;
-    padding: 10px;
+    padding: 12px 25px;
     font-size: .7rem;
     border: none;
 }
 #banner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5% 10%;
-    gap: 30%;
+    padding: 4% 12%;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
-#banner img{
-    width:300px;
+h3{
+    font-size: 2rem;
+}
+#banner div{
+    width: 50vw;
+}
+#banner div p{
+    width: 75%;
+}
+#banner div img{
+    width: 100%;
+}
+#manage{
+    display: flex;
+    margin: 4% 12%;
+}
+#manage div{
+    
+}
+.containers{
+    width: 50vw;
+}
+.left p{
+    width: 70%;
+    font-size: .9rem;
+}
+ol{
+    list-style: none;
+
+}
+.articule{
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+}
+.articule div{
+    width: 100%;
+}
+.articules{
+    width: 50%;
+}
+.articule p{
+    font-size: .9rem;
+    
+}
+.numbers{
+    padding: 10px 20px;
+    top: 12px;
+    position: relative;
+
+}
+.articule div p{
+    color: #B3B2B7;
+}
+#theysaid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% 12%;
+}
+#cards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card img{
+    width: 70px;
+}
+.card p{
+    color: #B9B9C1;
+    text-align: center;
+}
+#top-footer{
+    display: flex;
+    background-color: #F3603B;
+}
+#top-footer h3{
+    color: white;
+}
+#bottom-footer{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: 
+    #1E1E26;
+    color: white;
+}
+#bottom-footer nav ul{
+    list-style: none;
 }
