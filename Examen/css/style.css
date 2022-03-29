@@ -437,6 +437,10 @@ ol{
     #top-footer::after{
         display: none;
     }
+    #bottom-footer{
+        height: 80vh;
+        justify-content: space-around;
+    }
 }
 
 
