@@ -56,6 +56,7 @@ h1{
     -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
     z-index: 999;
     margin-bottom: 24rem!important;
+    transition: all 1s;
     
 }
 #container div div{
@@ -64,11 +65,7 @@ h1{
 }
 
 #container div:hover{
-    
     height: 300px;
-    transition: all;
-    transition-duration: 1s;
-    
 }
 i{
     margin-top: 3rem;
@@ -93,11 +90,13 @@ i{
     color: #c13bff;
 }
 
-
+.card i{
+    transition:all .5s;
+}
 
 .card:hover i{
     transform: scale(1.2);
-    transition-duration: .5s;
+    
 }
 
 /* #container div:hover::after{
@@ -113,14 +112,13 @@ i{
 } */
 h2{
    color: white;
-   
-   margin: 1rem 3rem;
+    margin: 1rem 3rem;
    font-weight: 600;
+   transition: all .5s;
 }
 h2:hover{
     transform: scale(1.1);
-    transition-duration: .5s;
-
+    
 }
 #container div div div{
     margin-top: 3rem;
@@ -188,8 +186,7 @@ iframe{
     -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2))!important;
     z-index: 999!important; */
     height: 300px !important;
-    transition: all!important;
-    transition-duration: 1s!important; 
+    transition:all 1s!important; 
     margin-bottom: 18rem!important;
 }
 /* #btn:checked #label i{

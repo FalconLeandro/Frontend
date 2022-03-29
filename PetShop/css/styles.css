@@ -86,23 +86,26 @@ nav ul li a {
   text-decoration: none;
   color: var(--secondary);
   padding: 1.7rem .5rem;
+  transition: all .5s;
 }
 nav ul li a img {
   margin-right: 0.3rem;
   width: 1.2rem;
+  transition:all .5s;
 }
 
 nav ul li a:hover img{
-  transition-duration: .5s;
+  
   transform: scale(1.4);
   color: #3c2313;
 }
 
 nav ul li a:hover {
-  transition-duration: .5s;
+  
   transform: scale(1.4);
-  color: #A5DAB8;
-  background: rgba(60, 35, 19,.2);
+  color: #f0a83e;
+  background: white;
+  
 }
 
 /*Header - Hamburguer-Menu*/
@@ -152,10 +155,11 @@ nav ul li a:hover {
   font-size: 19px;
   border-radius: 8px;
   text-transform: uppercase;
+  transition:all .5s;
 }
 #banner-text a:hover {
   transform: scale(1.1);
-  transition-duration: .5s;
+  
   background-color: #3c2313;
   color: #f0a83e;
 }
@@ -206,10 +210,10 @@ nav ul li a:hover {
   background-color: #faf9f5;
   margin: 1.5rem 0;
   border-radius: 25px;
+  transition:all .5s;
 }
 .card:hover{
   transform: scale(1.1);
-  transition-duration: .5s;
   border: #f0a83e solid 1px ;
 }
 .card img {
@@ -297,9 +301,7 @@ footer {
   margin-left: 15px;
   font-size: 24px;
 }
-#suscription-inputs{
 
-}
 #suscription-inputs input,
 button {
   border: none;
@@ -394,6 +396,7 @@ button {
     position: fixed;
     bottom: 50px;
     right: -10vw;
+    transition:all .5s;
 }
 #sticky:hover{
   opacity: 1!important;
