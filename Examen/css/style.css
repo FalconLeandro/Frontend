@@ -271,6 +271,9 @@ ol{
     justify-content: space-between;
     height: 119px;
 }
+#section1 p{
+    display: none;
+}
 #logo-footer{
     color: white;
 }
@@ -326,7 +329,7 @@ ol{
     color: #F3603B;
 }
 
-#section3 p{
+#section3 p,#section1 p{
     font-size: .7rem;
     color:  #8C8C94;
 }
@@ -426,6 +429,16 @@ ol{
         width: auto;
         font-size: 2.4rem;
     }
+    #top-footer::before{
+        width: 500px;
+        height: 362px;
+        background-image: url(../img/bg-simplify-section-mobile.svg);
+        bottom: 0px;
+        left: 0px;
+        }
+        #top-footer::after{
+            display: none;
+        }
     #bottom-footer{
         flex-direction: column-reverse;
         align-items: center;
@@ -434,29 +447,32 @@ ol{
     
     #section1{
         flex-direction: column-reverse;
-        height: auto;
+        height: 30%;
+        align-items: center;
+    }
+    #section1 p{
+        display: block;
+        
+    }
+    #section3{
+        margin-top: 5%;
     }
     #section3 div{
         display: none;
     }
+    
     #section2{
         justify-content: space-evenly;
         width: 100%;
+    }
+    #social i{
+        font-size: 2rem;
     }
     #section2 nav{
         text-align: start;
     }
     
-    #top-footer::before{
-    width: 500px;
-    height: 362px;
-    background-image: url(../img/bg-simplify-section-desktop.svg);
-    bottom: 0px;
-    left: -258px;
-    }
-    #top-footer::after{
-        display: none;
-    }
+    
     #bottom-footer{
         height: 80vh;
         justify-content: space-around;
