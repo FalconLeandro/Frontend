@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   font-family: "Be Vietnam Pro", sans-serif;
+  /* border: 2px solid red; */
+
 }
 h1,
 h2,
@@ -412,6 +414,7 @@ nav ul li a:hover {
 /* resposive-tablet&mobile */
 
 @media only screen and (max-width: 768px) {
+
   /* body */
 
   body {
@@ -420,15 +423,11 @@ nav ul li a:hover {
     overflow-x: hidden;
   }
   body::before{
-    content: "";
-    width: 827px;
+    width: 400px;
     height: 900px;
     background-image: url("../img/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    position: absolute;
     top: -50%;
-    right: -448px;
-    z-index: -1;
+    right: 0;
     /* background-image: url("../img/bg-simplify-section-mobile.svg"); */
   }
   
