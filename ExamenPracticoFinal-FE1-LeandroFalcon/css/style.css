@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500&display=swap");
+
 /* global styles */
 
 * {
@@ -7,7 +8,6 @@
   padding: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   /* border: 2px solid red; */
-
 }
 h1,
 h2,
@@ -190,6 +190,7 @@ nav ul li a:hover {
   box-shadow: none;
   font-size: 0.8rem;
   font-weight: 400;
+  pointer-events:none; 
 }
 .article {
   display: flex;
@@ -414,7 +415,6 @@ nav ul li a:hover {
 /* resposive-tablet&mobile */
 
 @media only screen and (max-width: 768px) {
-
   /* body */
 
   body {
@@ -422,15 +422,6 @@ nav ul li a:hover {
     padding: 0;
     overflow-x: hidden;
   }
-  body::before{
-    width: 400px;
-    height: 900px;
-    background-image: url("../img/bg-tablet-pattern.svg");
-    top: -50%;
-    right: 0;
-    /* background-image: url("../img/bg-simplify-section-mobile.svg"); */
-  }
-  
 
   /* header */
 
@@ -480,10 +471,18 @@ nav ul li a:hover {
     margin: 0;
     padding: 4% 8% !important;
   }
+
+  /* main-sectionManage_articles */
+
   .article {
     position: relative;
     text-align: start;
     margin: 4% 2%;
+  }
+  .numbers {
+    position: absolute;
+    left: 0;
+    top: auto;
   }
   .article p {
     padding: 1rem 0.2rem;
@@ -496,17 +495,18 @@ nav ul li a:hover {
     font-size: 1rem;
     z-index: -1;
   }
-  .numbers {
-    position: absolute;
-    left: 0;
-    top: auto;
-  }
   .hidden {
     display: none;
   }
+
+  /* main-sectionTheysaid*/
+
   #theysaid {
     justify-content: space-evenly;
   }
+
+  /* main-sectionTheysaid_cards*/
+
   #cards {
     flex-direction: column;
   }
@@ -514,6 +514,11 @@ nav ul li a:hover {
     display: block;
     margin-top: 5%;
   }
+
+  /*footer*/
+
+  /*top-footer*/
+
   #top-footer {
     flex-direction: column;
     justify-content: space-evenly;
@@ -534,6 +539,9 @@ nav ul li a:hover {
   #top-footer::after {
     display: none;
   }
+
+  /*bottom-footer*/
+
   #bottom-footer {
     flex-direction: column-reverse;
     align-items: center;
