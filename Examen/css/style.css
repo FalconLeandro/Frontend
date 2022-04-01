@@ -423,13 +423,13 @@ nav ul li a:hover {
     content: "";
     width: 827px;
     height: 900px;
-    /* background-image: url("../img/bg-tablet-pattern.svg"); */
+    background-image: url("../img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     position: absolute;
     top: -50%;
     right: -448px;
     z-index: -1;
-    background-image: url("../img/bg-simplify-section-mobile.svg");
+    /* background-image: url("../img/bg-simplify-section-mobile.svg"); */
   }
   
 
