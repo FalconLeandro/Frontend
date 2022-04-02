@@ -17,7 +17,7 @@ body{
     width: 100vw;
     background-color: #8EC5FC;
     overflow-x: hidden;
-    
+    opacity: .9;
 }
 h1{
     color: white;
@@ -55,8 +55,7 @@ h1{
     border-radius: 0 0 15px 15px;
     -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
     z-index: 999;
-    margin-bottom: 24rem!important;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
     
 }
 #container div div{
@@ -89,37 +88,24 @@ i{
 .fa-pizza-slice{
     color: #c13bff;
 }
-
+.card{
+    margin-bottom: 3rem!important;;
+}
 .card i{
-    transition:all .5s;
+    transition:all .5s ease-in-out;
 }
 
-.card:hover i{
+.card:hover i,.card:hover h2{
     transform: scale(1.2);
-    
 }
 
-/* #container div:hover::after{
-    content:'\f094';
-    color: white;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 500;
-    padding: 4rem;
-    padding-top: 1rem;
-    background-color: #FFD43B;
-    border-radius: 20px;
-    font-size: 6rem;
-} */
 h2{
    color: white;
     margin: 1rem 3rem;
    font-weight: 600;
-   transition: all .5s;
+   transition: all .5s ease-out;
 }
-h2:hover{
-    transform: scale(1.1);
-    
-}
+
 #container div div div{
     margin-top: 3rem;
     height: 62px;
@@ -147,6 +133,7 @@ iframe{
     position: absolute;
     width: 100%;
     height: 75vh;
+    top: 0;
     z-index: 1;
     -webkit-box-reflect: below 1rem linear-gradient(transparent,rgba(0,0,0,.5));                                                            
    }
@@ -187,12 +174,5 @@ iframe{
     z-index: 999!important; */
     height: 300px !important;
     transition:all 1s!important; 
-    margin-bottom: 18rem!important;
+    margin-bottom: 10rem!important;
 }
-/* #btn:checked #label i{
-    content: "\f185";
-    font-weight: 900;
-    font-family: 'Font Awesome\ 6 free';
-} *i0'-0o¡
-90'89est/32uyiuhjsertgrtg aw
-/8*++/-9
