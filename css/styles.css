@@ -165,14 +165,25 @@ iframe{
     background: linear-gradient(to right, #000000, #434343); 
 }
 .cards-expand{
-    
-    /* width: 14rem!important;
-    background-color: rgba(0,0,0,.2)!important;
-    font-weight: 300!important;
-    border-radius: 0 0 15px 15px!important;
-    -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2))!important;
-    z-index: 999!important; */
     height: 300px !important;
     transition:all 1s!important; 
     margin-bottom: 10rem!important;
+}
+@media only screen and (max-width: 768px){
+    h1 {
+        font-size: 3rem;
+        padding: 5rem 0 5rem 0;
+        font-weight: 100;
+    }
+    .fa-moon, .fa-sun{
+        
+        font-size: 1.2rem;
+        right: 30%;
+        top: 10rem;
+    }
+    .fa-sort{
+        right: 50%;
+        top: 10rem;
+        font-size: 1.3rem;
+    }
 }
