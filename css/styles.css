@@ -24,11 +24,6 @@ h1{
     padding-top:3rem ;
     font-weight: 300;
     font-size: 4rem;
-    /* background: linear-gradient(to right,#FFD43B,#3BDBFF);
-    -webkit-background-clip: text;
-     color: transparent;  */
-     
-    
 }
 
 #end{
@@ -42,9 +37,6 @@ h1{
     width: 100vw;
     margin-top: 3rem;
     justify-content: space-evenly;
-    /* align-items: center; */
-    
-    
 }
 #container div{
     width: 14rem;
@@ -56,7 +48,6 @@ h1{
     -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
     z-index: 999;
     transition: all 1s ease-in-out;
-    
 }
 #container div div{
     height: 300px;
@@ -68,9 +59,9 @@ h1{
 }
 i{
     margin-top: 3rem;
-    width: 100px;
     -webkit-box-reflect: below 1rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
     font-size: 5rem;
+    animation: floating 6s ease-in-out infinite ;
 }
 .fa-lemon{
     color:#FFD43B;
@@ -89,16 +80,14 @@ i{
     color: #c13bff;
 }
 .card{
-    margin-bottom: 3rem!important;;
+    margin-bottom: 3rem!important;
 }
 .card i{
     transition:all .5s ease-in-out;
 }
-
 .card:hover i,.card:hover h2{
     transform: scale(1.2);
 }
-
 h2{
    color: white;
     margin: 1rem 3rem;
@@ -110,7 +99,6 @@ h2{
     margin-top: 3rem;
     height: 62px;
     padding: 1.5rem 3rem;
-    /* background-color: rgba(0,0,0,.1) */
     background-color: transparent;
 }
 #container div div div span{
@@ -169,6 +157,20 @@ iframe{
     transition:all 1s!important; 
     margin-bottom: 10rem!important;
 }
+/* @keyframes floating {
+	0% {
+		text-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		text-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+} */
 @media only screen and (max-width: 768px){
     h1 {
         font-size: 3rem;
@@ -176,13 +178,12 @@ iframe{
         font-weight: 100;
     }
     .fa-moon, .fa-sun{
-        
         font-size: 1.2rem;
-        right: 30%;
+        right: 40vw;
         top: 10rem;
     }
     .fa-sort{
-        right: 50%;
+        left: 40vw;
         top: 10rem;
         font-size: 1.3rem;
     }

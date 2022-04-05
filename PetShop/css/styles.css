@@ -88,16 +88,16 @@ nav ul li a {
   padding: 1.7rem .5rem;
   transition: all .5s;
 }
-nav ul li a img {
+nav ul li a i {
   margin-right: 0.3rem;
   width: 1.2rem;
   transition:all .5s;
 }
 
-nav ul li a:hover img{
+nav ul li a:hover i{
   
   transform: scale(1.4);
-  color: #3c2313;
+  color: #f0a83e;
 }
 
 nav ul li a:hover {
@@ -214,7 +214,6 @@ nav ul li a:hover {
 }
 .card:hover{
   transform: scale(1.1);
-  border: #f0a83e solid 1px ;
 }
 .card img {
   width: fit-content;
