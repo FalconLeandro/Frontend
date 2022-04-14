@@ -132,7 +132,7 @@ iframe{
     position: absolute;
     cursor: pointer;
     font-size: 1.5rem;
-    right: 1rem;
+    right: 3rem;
     top: 1rem;
     z-index: 999;
 }
@@ -148,6 +148,12 @@ iframe{
     z-index: 999;
     font-size: 1.8rem;
     width: 40px;
+}
+.i{
+    transition:.3s ease-in-out;
+}
+.i:hover{
+    transform: scale(1.2);
 }
 .dark{
     background: linear-gradient(to right, #000000, #434343); 

@@ -5,10 +5,10 @@ function bgChanger() {
     const tema = document.body.classList.toggle('dark');
 
     if (tema) {
-        label.innerHTML='<i class="fas fa-sun"></i>'
+        label.innerHTML='<i class="fas fa-sun i"></i>'
         
     } else{
-        label.innerHTML='<i class="fas fa-moon"></i>'
+        label.innerHTML='<i class="fas fa-moon i"></i>'
     }
 
 }
