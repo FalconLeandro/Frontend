@@ -94,3 +94,19 @@ function circun(radio){
 console.log(circun(5))
 
 console.log(Math.random())
+
+// Definir y crear una función es lo mismo, en este caso, definamos una que muestre en
+// la consola un saludo. Luego, para poder ejecutarla, debemos invocarla o llamarla. Que
+// sea algo así:
+// function saludar() {
+// console.log("hola, tanto tiempo sin verte.");
+// }
+// saludar()
+
+// Muy bien, ahora deberemos modificar la función para que tome por parámetro un
+// nombre y salude a esa persona cuando el lenguaje la ejecute.
+
+function saludar(name) {
+    console.log('hola ' + name +', tanto tiempo sin verte.');
+    }
+    saludar('Leandro')
