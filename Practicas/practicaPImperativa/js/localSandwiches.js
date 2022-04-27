@@ -34,13 +34,14 @@
 // deberá consultar primero que tipo de sándwich base se seleccionó, luego el tipo de
 // pan, y por último deberá verificar que adicionales se seleccionaron. Por último deberá
 // retornar el valor numérico del total a pagar del cliente.
-let sandwich=tipoSandwich;
-let pan=tipoPan;
-let subTotal=0;
-let total=0;
-let cantAdicionales=0; 
-function totalAPagarr(tipoSandwich,tipoPan,queso,tomate,lechuga,cebolla,mostaza,mayonesa) {
 
+
+ 
+function totalAPagarr(tipoSandwich,tipoPan,queso,tomate,lechuga,cebolla,mostaza,mayonesa) {
+    
+    let subTotal=0;
+    let total=0;
+    let cantAdicionales=0;
 if (tipoSandwich === 'pollo') {
     subTotal=150;
 } else if (tipoSandwich === 'carne') {
@@ -84,4 +85,4 @@ if (queso=true) {
 return (total= subTotal);
 
 }
-console.log('El total a pagar para un sandwich de'+ sandwich + 'de pan ' + pan + ' con '+ cantAdicionales + ' adicionales es de: $' + totalAPagarr('pollo','blanco',true,false,false,false,true,true) + '. Gracias por su compra!');
+console.log( totalAPagarr('pollo','blanco',true,false,false,false,true,true) + '. Gracias por su compra!');
