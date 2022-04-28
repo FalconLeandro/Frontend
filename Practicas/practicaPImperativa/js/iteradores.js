@@ -30,36 +30,36 @@
 // Queremos construir una función llamada encontreUn5 que reciba un array como parámetro llamado numeros. La función deberá recorrer este array e imprimir por consola cada uno de los números. En caso de encontrar un 5, deberá cortar la ejecución e imprimir por consola el texto "Se encontró un 5!".
 
 // Para resolver este ejercicios DEBES utilizar el do-while.
-let numeros = [0,1,2,3,4,5,6,7,8,9];
+// let numeros = [0,1,2,3,4,5,6,7,8,9];
 
-function encontreUn5(numeros) {
-    let i = 0;
-    do {
-        console.log(numeros[i]);
-        i++
+// function encontreUn5(numeros) {
+//     let i = 0;
+//     do {
+//         console.log(numeros[i]);
+//         i++
 
-    } while (i!=5);
-    return 'Se encontró un 5'
-}
-console.log(encontreUn5(numeros));
+//     } while (i!=5);
+//     return 'Se encontró un 5'
+// }
+// console.log(encontreUn5(numeros));
 
 // Ejercicio 2
 // Vamos a crear una función y asignarla a una variable!.
 
 // Para este ejercicio te damos la función tablaDeMultiplicar ya definida, la cual recibe un número como parámetro. Queremos que al ejecutarse la función muestre por consola la tabla de multiplicar del 1 al 10 del número que reciba.
 
-function tablaDeMultiplicar(num) {
-    let i = 1;
-    console.log('** Tabla del ' + num + ' **');
-    console.log('');
-       do {
+// function tablaDeMultiplicar(num) {
+//     let i = 1;
+//     console.log('** Tabla del ' + num + ' **');
+//     console.log('');
+//        do {
            
-           console.log(num + ' * ' +  i + ' = ' + (num * i));
-           i++
-       } while (i<=10);
-}
+//            console.log(num + ' * ' +  i + ' = ' + (num * i));
+//            i++
+//        } while (i<=10);
+// }
 
-console.log(tablaDeMultiplicar(850));
+// console.log(tablaDeMultiplicar(850));
 
 // 1. Partimos de nuestro array de películas, el cual estaba conformado de la
 // siguiente manera:
@@ -71,10 +71,51 @@ console.log(tablaDeMultiplicar(850));
 
 let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
 
-function pasarAMayusculas(peliculas) {
-    for (let i = 0; i <= peliculas.length; i++) {
-        peliculas[i] = peliculas[i].toUpperCase();
+function mayusculas(array1){
+    console.log(array1.length); // explicacion de porque el i es < a array.length y no <=
+    for (let i=0; i<array1.length; i++) {
+        array1[i] = array1[i].toUpperCase();
+        
+        console.log('iteracion ' + i);// explicacion de porque el i es < a array.length y no <=
     }
-    return peliculas
+    return array1;
 }
-console.log(pasarAMayusculas(peliculas));
+console.log(mayusculas(peliculas));
+
+// 2. Ahora necesitamos modificar la función pasajeDeElementos() la cual nos permite
+// agregar los contenidos de nuestro array de pelis animadas al array de pelis
+// original.
+
+let peliculasInfantiles = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"];
+
+function pasajeDeElementos(array1,array2){
+    let elementoBorrado = array2.pop(array1);//borrado ultimo elemento, punto 3
+    for (let i=0; i<array2.length; i++) {
+        
+        array1.push(array2[i].toUpperCase());
+    }
+    return array1;
+}
+console.log(pasajeDeElementos(peliculas,peliculasInfantiles));
+
+// 3. Para este punto, si decidiste trabajar en un archivo distinto en lugar de
+// modificar el anterior, recordá que teníamos un infiltrado dentro de nuestras
+// pelis animadas que debíamos sacar y guardar en otra variable antes de realizar
+// el pasaje de elementos de un array a otro.
+
+// 4. Por último, debemos modificar nuestra función comparadora de puntajes para
+// las películas como venimos haciendo hasta ahora.
+
+const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
+function compararArrays(array1,array2){
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i]==array2[i]) {
+            console.log('Posicion ' + i + ': igual puntaje');
+        } else {
+            console.log('Posicion ' + i + ': diferente puntaje');
+        }
+    }
+}
+compararArrays(asiaScores,euroScores)
