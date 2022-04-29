@@ -33,10 +33,10 @@
 // Para resolver este ejercicios DEBES utilizar el do-while.
 // let numeros = [0,1,2,3,4,5,6,7,8,9];
 
-// function encontreUn5(array) {
+// function encontreUn5(numeros) {
 //     let i = 0;
 //     do {
-//         console.log(array[i]);
+//         console.log(numeros[i]);
 //         i++
 
 //     } while (i!=5);
@@ -60,7 +60,7 @@
 //        } while (i<=10);
 // }
 
-// console.log(tablaDeMultiplicar(7));
+// console.log(tablaDeMultiplicar(850));
 
 // 1. Partimos de nuestro array de películas, el cual estaba conformado de la
 // siguiente manera:
@@ -72,10 +72,51 @@
 
 // let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
 
-// function pasarAMayusculas(array) {
-//     for (let i = 0; i <= array.length; i++) {
-//         array[i] = array[i].toUpperCase();
-//     }
-//     return array
-// }
-// console.log(pasarAMayusculas(peliculas));
+function mayusculas(array1){
+    console.log(array1.length); // explicacion de porque el i es < a array.length y no <=
+    for (let i=0; i<array1.length; i++) {
+        array1[i] = array1[i].toUpperCase();
+        
+        console.log('iteracion ' + i);// explicacion de porque el i es < a array.length y no <=
+    }
+    return array1;
+}
+console.log(mayusculas(peliculas));
+
+// 2. Ahora necesitamos modificar la función pasajeDeElementos() la cual nos permite
+// agregar los contenidos de nuestro array de pelis animadas al array de pelis
+// original.
+
+let peliculasInfantiles = ["toy story", "finding Nemo", "kung-fu panda", "wally", "fortnite"];
+
+function pasajeDeElementos(array1,array2){
+    let elementoBorrado = array2.pop(array1);//borrado ultimo elemento, punto 3
+    for (let i=0; i<array2.length; i++) {
+        
+        array1.push(array2[i].toUpperCase());
+    }
+    return array1;
+}
+console.log(pasajeDeElementos(peliculas,peliculasInfantiles));
+
+// 3. Para este punto, si decidiste trabajar en un archivo distinto en lugar de
+// modificar el anterior, recordá que teníamos un infiltrado dentro de nuestras
+// pelis animadas que debíamos sacar y guardar en otra variable antes de realizar
+// el pasaje de elementos de un array a otro.
+
+// 4. Por último, debemos modificar nuestra función comparadora de puntajes para
+// las películas como venimos haciendo hasta ahora.
+
+const asiaScores = [8, 10, 6, 9, 10, 6, 6, 8, 4];
+const euroScores = [8, 10, 6, 8, 10, 6, 7, 9, 5];
+
+function compararArrays(array1,array2){
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i]==array2[i]) {
+            console.log('Posicion ' + i + ': igual puntaje');
+        } else {
+            console.log('Posicion ' + i + ': diferente puntaje');
+        }
+    }
+}
+compararArrays(asiaScores,euroScores)
