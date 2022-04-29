@@ -5,15 +5,13 @@
 // retorna un mensaje felicitando al usuario, y en caso de que no acierte, retorna un
 // mensaje de aliento junto con el número ingresado y el secreto.
 
-// function adivino(numUsuario) {
-//     let numSecreto = Math.floor(Math.random() * 10) + 1;
-//     if (numUsuario===numSecreto) {
-//         return 'Felicitaciónes, acertaste';
-//     } else {
-//         return 'La proxima será... Tu número ingresado fué: ' + numUsuario + ' y el número secreto era: ' + numSecreto
-//     }
-// }
-// console.log(adivino(2))
+function adivino(numUsuario) {
+    let numSecreto = Math.floor(Math.random() * 10) + 1;
+    if (numUsuario===numSecreto) {
+        return 'Felicitaciónes, acertaste';
+    } else {
+        return 'La proxima será... Tu número ingresado fué: ' + numUsuario + ' y el número secreto era: ' + numSecreto
+    }
+}
+console.log(adivino(1))
 
-let numero=Math.random()*10
-console.log(numero);

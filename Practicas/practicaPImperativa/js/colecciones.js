@@ -13,16 +13,17 @@ let peliculas = ['star wars','totoro','rocky','pulp fiction','la vida es bella']
 // parámetro un array y convierta el contenido de cada elemento a mayúsculas.
 // Pista: revisá qué hace el método de strings .toUpperCase().
 
-function mayusculas(peliculas) {
-    peliculas[0]=peliculas[0].toUpperCase();
-    peliculas[1]=peliculas[1].toUpperCase();
-    peliculas[2]=peliculas[2].toUpperCase();
-    peliculas[3]=peliculas[3].toUpperCase();
-    peliculas[4]=peliculas[4].toUpperCase();
+function mayusculas(array) {
+    array[0]=array[0].toUpperCase();
+    array[1]=array[1].toUpperCase();
+    array[2]=array[2].toUpperCase();
+    array[3]=array[3].toUpperCase();
+    array[4]=array[4].toUpperCase();
 
-    return peliculas
+    return array;
 }
 console.log(mayusculas(peliculas));
+
 
 // 3. Mientras trabajabas en el feature anterior, se dio el aviso de que también hay
 // que crear otra estructura similar a la primera, pero con las siguientes películas

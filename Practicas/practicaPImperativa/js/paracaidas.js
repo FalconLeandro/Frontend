@@ -12,4 +12,4 @@ function abrirParacaidas(velocidad,altura) {
         return 'El paracaidas no debe abrirse'
     }
 }
-console.log(abrirParacaidas(800,200));
+console.log(abrirParacaidas(800,2000));

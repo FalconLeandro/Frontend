@@ -7,6 +7,7 @@
 //     for (let i = 0; i<=4; i++) {
 //          console.log(texto);
 //     }
+//     return texto
 // }
 // console.log(loro('hola'));
 
@@ -30,36 +31,36 @@
 // Queremos construir una función llamada encontreUn5 que reciba un array como parámetro llamado numeros. La función deberá recorrer este array e imprimir por consola cada uno de los números. En caso de encontrar un 5, deberá cortar la ejecución e imprimir por consola el texto "Se encontró un 5!".
 
 // Para resolver este ejercicios DEBES utilizar el do-while.
-let numeros = [0,1,2,3,4,5,6,7,8,9];
+// let numeros = [0,1,2,3,4,5,6,7,8,9];
 
-function encontreUn5(numeros) {
-    let i = 0;
-    do {
-        console.log(numeros[i]);
-        i++
+// function encontreUn5(array) {
+//     let i = 0;
+//     do {
+//         console.log(array[i]);
+//         i++
 
-    } while (i!=5);
-    return 'Se encontró un 5'
-}
-console.log(encontreUn5(numeros));
+//     } while (i!=5);
+//     return 'Se encontró un 5'
+// }
+// console.log(encontreUn5(numeros));
 
 // Ejercicio 2
 // Vamos a crear una función y asignarla a una variable!.
 
 // Para este ejercicio te damos la función tablaDeMultiplicar ya definida, la cual recibe un número como parámetro. Queremos que al ejecutarse la función muestre por consola la tabla de multiplicar del 1 al 10 del número que reciba.
 
-function tablaDeMultiplicar(num) {
-    let i = 1;
-    console.log('** Tabla del ' + num + ' **');
-    console.log('');
-       do {
+// function tablaDeMultiplicar(num) {
+//     let i = 1;
+//     console.log('--- Tabla del ' + num + ' ---');
+//     console.log('');
+//        do {
            
-           console.log(num + ' * ' +  i + ' = ' + (num * i));
-           i++
-       } while (i<=10);
-}
+//            console.log(num + ' * ' +  i + ' = ' + (num * i));
+//            i++
+//        } while (i<=10);
+// }
 
-console.log(tablaDeMultiplicar(850));
+// console.log(tablaDeMultiplicar(7));
 
 // 1. Partimos de nuestro array de películas, el cual estaba conformado de la
 // siguiente manera:
@@ -69,12 +70,12 @@ console.log(tablaDeMultiplicar(850));
 // en su momento lo habíamos hecho de manera “manual”. Ahorá, hagámoslo de una
 // forma más automática, utilizando bucles.
 
-let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
+// let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
 
-function pasarAMayusculas(peliculas) {
-    for (let i = 0; i <= peliculas.length; i++) {
-        peliculas[i] = peliculas[i].toUpperCase();
-    }
-    return peliculas
-}
-console.log(pasarAMayusculas(peliculas));
+// function pasarAMayusculas(array) {
+//     for (let i = 0; i <= array.length; i++) {
+//         array[i] = array[i].toUpperCase();
+//     }
+//     return array
+// }
+// console.log(pasarAMayusculas(peliculas));
