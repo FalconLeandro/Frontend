@@ -42,11 +42,15 @@ let deportista={
     horas:0,
     entrenarHoras: function(horas){
         this.horas=horas;
-        this.energia=this.energia-horas*5;
-        this.experiencia=this.experiencia+horas*2
+        this.energia=this.energia-(horas*5);
+        this.experiencia=this.experiencia+(horas*2);
     }
 }
-console.log('Horas entrenadas: ' + deportista.horas)
-console.log('Energia restante: ' + deportista.energia)
-console.log('Experiencia ganada: ' + deportista.experiencia)
+
 deportista.entrenarHoras(10)
+console.log('Horas entrenadas: ' + deportista.horas);
+console.log('Energia restante: ' + deportista.energia);
+console.log('Experiencia ganada: ' + deportista.experiencia);
+
+let nombreUsuario=prompt('Por favor introduzca su nombre');
+console.log(nombreUsuario);
