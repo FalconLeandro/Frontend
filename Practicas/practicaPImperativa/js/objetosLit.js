@@ -34,7 +34,7 @@ console.log(perro);
 // Resta a su energía (this.energia) la cantidad de horas x 5.
 // Incrementa su experiencia (this.experiencia) la cantidad de horas x 2.
 // Una vez definida la función, podemos ejecutar el código y ver cómo va variando la energía y experiencia del deportista por consola.
-
+let nombreUsuario = prompt('Por favor introduzca las horas que ha entrenado');
 let deportista={
     nombre:'Mica mi mamor',
     energia:100,
@@ -47,10 +47,10 @@ let deportista={
     }
 }
 
-deportista.entrenarHoras(10)
+deportista.entrenarHoras(nombreUsuario)
 console.log('Horas entrenadas: ' + deportista.horas);
 console.log('Energia restante: ' + deportista.energia);
 console.log('Experiencia ganada: ' + deportista.experiencia);
 
-let nombreUsuario=prompt('Por favor introduzca su nombre');
+
 console.log(nombreUsuario);

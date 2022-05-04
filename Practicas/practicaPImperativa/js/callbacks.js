@@ -48,3 +48,4 @@ let largoString = (urlCompletas) => {
 }
 let largoDeElmentos = procesar(["www.google.com","www.yahoo.com"],largoString)
 console.log(largoDeElmentos); // imprime [ 14, 13 ]
+
