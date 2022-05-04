@@ -24,6 +24,7 @@ function toMayusculas(array1) {
 }
 console.log(toMayusculas(peliculas));
 
+
 // 3. Mientras trabajabas en el feature anterior, se dio el aviso de que también hay
 // que crear otra estructura similar a la primera, pero con las siguientes películas
 // animadas:

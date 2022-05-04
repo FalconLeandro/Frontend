@@ -53,10 +53,10 @@ sueldo mensual como parámetro. Considera que tu mes de trabajo tiene 40
 horas.*/
 
 function pagoPorHora(sueldo){
-    return sueldo/(26*8)
+    return sueldo/(24*8)
 }
-console.log(pagoPorHora(120000))
-
+console.log(pagoPorHora(98000))
+J
 
 /*6. Crear la función calculadorIMC() que reciba la altura en metros y el peso en
 kilogramos y calcule el IMC de una persona. Luego, ejecutar la función

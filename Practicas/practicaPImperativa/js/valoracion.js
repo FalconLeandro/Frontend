@@ -34,4 +34,4 @@ function valoracion(puntaje) {
             break;
     }
 }
-console.log(valoracion('Muy buena') + '¡Gracias por tu visita!');
+console.log(valoracion('Mala') + '¡Gracias por tu visita!');

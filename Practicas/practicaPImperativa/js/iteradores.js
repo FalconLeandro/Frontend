@@ -7,6 +7,7 @@
 //     for (let i = 0; i<=4; i++) {
 //          console.log(texto);
 //     }
+//     return texto
 // }
 // console.log(loro('hola'));
 
@@ -50,7 +51,7 @@
 
 // function tablaDeMultiplicar(num) {
 //     let i = 1;
-//     console.log('** Tabla del ' + num + ' **');
+//     console.log('--- Tabla del ' + num + ' ---');
 //     console.log('');
 //        do {
            
@@ -69,7 +70,7 @@
 // en su momento lo habíamos hecho de manera “manual”. Ahorá, hagámoslo de una
 // forma más automática, utilizando bucles.
 
-let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
+// let peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
 
 function mayusculas(array1){
     console.log(array1.length); // explicacion de porque el i es < a array.length y no <=
