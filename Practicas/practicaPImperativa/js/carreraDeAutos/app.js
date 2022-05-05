@@ -5,9 +5,8 @@
 // ● Guardar el listado en una variable
 // Resultado esperado: variable conteniendo un array con todos los autos.
 
-const { log } = require('console');
-const jsonHelper = require('./equipo.js');
-let autos = jsonHelper.leer('listado.json');
+const jsonHelper = require('../equipo');
+let autos = jsonHelper.leer('/carreraDeAutos/listado.json');
 
 // 2. Crear un objeto literal que represente la carrera
 // Este objeto literal, que podemos llamar carrera, será nuestra representación de
@@ -68,10 +67,21 @@ let autos = jsonHelper.leer('listado.json');
 // Recordemos que Javascript tiene un método para hacer justamente lo que
 // necesitamos 😉.
 
+// F. Agregar un método buscarPorRodado que permita filtrar los ciclistas
+// habilitados, siempre y cuando su rodado sea igual al enviado como
+// argumento.
+// ○ Este método recibirá por parámetro un number que represente el
+// rodado a buscar.
+// ○ Este método devolverá un array con todos los ciclistas que cumplan
+// con la condición mencionada.
+// ○ En caso de no encontrar ningún ciclista, devolverá un array vacío.
+// ○ Este método debe usar ciclistasHabilitados para buscar incluir
+// solamente aquellos autos que estén habilitados.
+
 carrera = {
     autos:autos,
     autosPorTanda:6,
-    autosHabilitados:function (){
+    autosHabilitados:function(){
         let habilitados = this.autos.filter((auto)=>auto.sancionado==false);
         return habilitados;
     },
@@ -91,21 +101,16 @@ carrera = {
         return resultadoBusqueda;
     },
     buscarPorCilindrada:function(num) {
-        
         let autosDentroDelRango = this.autosHabilitados().filter((auto)=>auto.cilindrada<=num);
         return autosDentroDelRango
     },
     ordenarPorVelocidad:function() {
-        // let listaOrdenada = this.autos.map(function(elemento) {
-        //     return autos.elemento.velocidad.sort();
-        // });
-        // return listaOrdenada.sort();
         let listaOrdenada = this.autos.sort((a, b) => {
             return a.velocidad - b.velocidad;
         });
         return listaOrdenada;
-
-    }
+    },
+    
 }
 
 console.log(carrera.ordenarPorVelocidad());
