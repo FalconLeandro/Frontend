@@ -39,9 +39,28 @@ let bicicletas = jsonHelper.leer('/carreraBicicletas/listado.json');
 // Recordemos que Javascript tiene un método para hacer justamente lo que
 // necesitamos 😉.
 
+// H. Agregar un método generarTanda que retorne un array de ciclistas, que
+// cumplan con las siguientes condiciones:
+// ○ El ciclista esté habilitado
+// ○ El rodado sea igual al valor enviado como argumento
+// ○ El peso sea menor o igual al valor enviado como argumento
+// ○ La cantidad devuelta sea como máximo la expresada en la
+// propiedad bicicletasPorTanda.
+// Para este método vamos a dejar que vos determines los parámetros que
+// debería recibir.
+// Te recomendamos que pienses qué métodos de los que ya programaste podés
+// reutilizar en este paso 😉.
+
+// I. Agregar un método que permita calcularPodio, el mismo deberá calcular
+// al ganador y los siguientes dos puestos en función de su puntaje.
+// ○ El método recibirá como parámetro un array de ciclistas. Los
+// mismos deberán ser generados con generarTanda.
+// ○ El método ordenará por puntaje los ciclistas recibidos.
+// ○ El método imprimirá por consola los tres primeros puestos.
+
 carrera={
     bicicletas:bicicletas,
-    bicicletasPorTanda:4,
+    bicicletasPorTanda:8,
     ciclistasHabilitados: function() {
         let habilitados = this.bicicletas.filter(bicicleta=>bicicleta.dopaje==false);
         return habilitados;
@@ -63,13 +82,30 @@ carrera={
         return resultadoBusqueda;
     },
     buscarPorRodado:function(rodado) {
-        let tanda = this.ciclistasHabilitados().filter(bicicleta=>bicicleta.rodado==rodado);
-        return tanda;
+        let tandaPorRodado = this.ciclistasHabilitados().filter(bicicleta=>bicicleta.rodado==rodado);
+        return tandaPorRodado;
     },
     ordenarPorRodado:function() {
         let listaOrdenada= this.bicicletas.sort((a,b)=> a.rodado - b.rodado);
         return listaOrdenada;
+    },
+    generarTanda:function(rodado,pesoMax) {
+        let tanda = this.buscarPorRodado(rodado).filter(bicicleta=>bicicleta.peso<=pesoMax);
+        return tanda.slice(0,this.bicicletasPorTanda);
+    },
+    calcularPodio:function() {
+        let podio = this.generarTanda(24,10).sort((a,b)=>b.puntaje-a.puntaje).slice(0,3);
+        podio.forEach(bicicleta => {
+            if (bicicleta == podio[0]) {
+                console.log('El ganador es: '+ bicicleta.ciclista +', con un puntaje de ' + bicicleta.puntaje);
+            } else if(bicicleta == podio[1] ) {
+                console.log('El segundo puesto es para: '+ bicicleta.ciclista +', con un puntaje de ' + bicicleta.puntaje);
+            }else{
+                console.log('El tercer puesto es para: '+ bicicleta.ciclista +', con un puntaje de ' + bicicleta.puntaje);
+            };
+        });
+        return ''
     }
     
 }
-console.log(carrera.ordenarPorRodado());
+console.log(carrera.calcularPodio());

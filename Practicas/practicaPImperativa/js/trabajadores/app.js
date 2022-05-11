@@ -34,11 +34,30 @@ const catalogTrabajadores = {
   //fin de NO modificar
   //tu código a partir de aquí...
   //...
-
+  listarHabilitados:function(array) {
+    let datos = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].matriculado==true) {
+        datos.push(this.traerUnTrabajador(array[i]));
+      }
+      
+    } 
+    console.table(datos);
+  },
+  buscarPorNombre:function(name,array) {
+    let i=0;
+    let resultado='';
+    do {
+      resultado=array[i.nombre];
+      console.log(resultado);
+      i++;
+    } while (array[i.nombre]!=name || i <= array.length);
+    return resultado
+  },
 }; 
 
 console.log("\n****** mostrar todos los trabajadores *****");
-console.log(catalogTrabajadores.trabajadores);
+console.log(catalogTrabajadores.listarTodos(catalogTrabajadores.trabajadores));
 
 console.log("\n****** punto 1 ¿cuál es la única propiedad del objeto literal? *****");
 console.log('trabajadores: JsonTrabajadores,')
@@ -50,10 +69,10 @@ console.log("\n****** punto 3 mostrar un trabajador *****");
 console.log(catalogTrabajadores.mostrarUnTrabajador(catalogTrabajadores.trabajadores[4]))
 
 console.log("\n****** punto 4 Listar habilitados ******");
-console.log('Tu respuesta')
+console.log(catalogTrabajadores.listarHabilitados(catalogTrabajadores.trabajadores))
 
 console.log("\n****** punto 5 Buscar por Nombre ******");
-console.log('Tu respuesta')
+console.log(catalogTrabajadores.buscarPorNombre('Lib Spearing',catalogTrabajadores.trabajadores))
 
 console.log("\n****** punto 6 Incrementar Precio de la Consulta ******");
 console.log('Tu respuesta')

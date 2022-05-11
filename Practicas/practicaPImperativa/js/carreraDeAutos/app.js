@@ -130,8 +130,8 @@ carrera = {
 
     },
     generarTanda:function(cilindradaMax,pesoMax) {
-        let tanda = this.buscarPorCilindrada(cilindradaMax).filter((auto)=>auto.peso<=pesoMax);
-        return tanda.slice(0,6);
+        let tanda = this.buscarPorCilindrada(cilindradaMax).filter(auto=>auto.peso<=pesoMax);
+        return tanda.slice(0,this.autosPorTanda);
     },
     listarPodio:function() {
         let tanda = this.generarTanda(3000,3000);
