@@ -81,6 +81,7 @@ input {
 #error-container {
   width: 100%;
   display: flex;
+  text-align: center;
 }
 
 small {
@@ -91,5 +92,6 @@ small {
 
 .hidden {
   display: none !important;
+  text-align: center;
 }
 

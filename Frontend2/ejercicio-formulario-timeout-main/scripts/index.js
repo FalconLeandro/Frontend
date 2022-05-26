@@ -50,43 +50,43 @@ const baseDeDatos = {
 let loginBtn = document.querySelector(".login-btn");
 
 loginBtn.addEventListener("click", function (event) {
-  let x=document.querySelector(".hidden");
-  x.setAttribute('style', 'display:inline !important');
+
+  let ingresando=document.querySelector(".hidden");
+  let advertencia=document.querySelector(".hidden2");
+  let main = document.querySelector("#main");
+  
+  ingresando.setAttribute('style', 'display:inline !important');
+  advertencia.setAttribute('style', 'display:none !important');
 
   setTimeout(function() {
-    x.setAttribute('style', 'display:none !important');
 
-    let email = document.getElementById("email-input");
-    let a=document.querySelector(".hidden2");
+    ingresando.setAttribute('style', 'display:none !important');
+    advertencia.setAttribute('style', 'display:inline !important');
+
+    let email = document.getElementById("email-input").value;
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     let pass = document.getElementById("password-input").value;
-    let limite;
-    let usuarioExiste;
-    if(pass.length <= 5 ) {
-      limite = true;
+    let longitudPermitida;
+    let usuarioEncontrado = baseDeDatos.usuarios.find(usuario => usuario.email==email);
+
+    if(pass.length >= 5 ) {
+      longitudPermitida = true;
     }
     else {
-      limite = false;
+      longitudPermitida = false;
     };
-    baseDeDatos.usuarios.forEach(element => {
-      if (element.email==email) {
-        usuarioExiste=true;
-      } else {
-        usuarioExiste=false;
-      }
-      console.log(usuarioExiste);
-    });
 
-
-    if (emailRegex.test(email.value) && limite==true && usuarioExiste==true){
-    a.innerText='Ingresaste';
+    if (emailRegex.test(email) && longitudPermitida && usuarioEncontrado != undefined){
+      advertencia.innerText='Ingresaste';
+      main.setAttribute('style', 'background:black !important');
     } else {
-    a.innerText='Alguno de los datos ingresados son incorrectos';
+      advertencia.innerText='Alguno de los datos ingresados son incorrectos';
     }
     
   },3000);
   
 });
+
 
 
 
