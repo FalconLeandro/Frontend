@@ -40,7 +40,7 @@ h1{
 }
 #container div{
     width: 14rem;
-    height: 60px;
+    height: 300px;
     background-color: rgba(0,0,0,.2);
     font-weight: 300;
     overflow: hidden;
@@ -54,9 +54,7 @@ h1{
     width: 224px;
 }
 
-#container div:hover{
-    height: 300px;
-}
+
 i{
     margin-top: 3rem;
     -webkit-box-reflect: below 1rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
@@ -80,7 +78,7 @@ i{
     color: #c13bff;
 }
 .card{
-    margin-bottom: 3rem!important;
+    margin-bottom: 10rem!important;
 }
 .card i{
     transition:all .5s ease-in-out;
@@ -158,10 +156,13 @@ iframe{
 .dark{
     background: linear-gradient(to right, #000000, #434343); 
 }
-.cards-expand{
-    height: 300px !important;
+.cards-contract{
+    height: 60px !important;
     transition:all 1s!important; 
-    margin-bottom: 10rem!important;
+    margin-bottom: 3rem !important;
+}
+.cards-contract:hover{
+    height: 300px!important;
 }
 /* @keyframes floating {
 	0% {

@@ -16,7 +16,7 @@ function cardChanger() {
     var card = document.querySelectorAll(".card");
     console.log(card);
     card.forEach(element => {
-        element.classList.toggle('cards-expand');
+        element.classList.toggle('cards-contract');
         
     });
     
