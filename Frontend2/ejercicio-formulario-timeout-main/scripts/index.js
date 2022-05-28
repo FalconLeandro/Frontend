@@ -25,6 +25,12 @@ const baseDeDatos = {
       email: "julianne.oconner@kory.org",
       password: "MysuperPassword345",
     },
+    {
+      id: 5,
+      name: "Leandro Falcón",
+      email: "cronosteo@hotmail.com",
+      password: "123456",
+    },
   ],
 };
 
@@ -48,13 +54,12 @@ const baseDeDatos = {
 // se deberá mostrar un mensaje de error que diga "Alguno de los datos ingresados son incorrectos"
 
 let loginBtn = document.querySelector(".login-btn");
-
+let ingresando=document.querySelector(".hidden");
+let advertencia=document.querySelector(".hidden2");
+let main = document.querySelector("#main");
+let h1 = document.querySelector("#h1");
 loginBtn.addEventListener("click", function (event) {
 
-  let ingresando=document.querySelector(".hidden");
-  let advertencia=document.querySelector(".hidden2");
-  let main = document.querySelector("#main");
-  
   ingresando.setAttribute('style', 'display:inline !important');
   advertencia.setAttribute('style', 'display:none !important');
 
@@ -65,8 +70,10 @@ loginBtn.addEventListener("click", function (event) {
 
     let email = document.getElementById("email-input").value;
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
     let pass = document.getElementById("password-input").value;
     let longitudPermitida;
+
     let usuarioEncontrado = baseDeDatos.usuarios.find(usuario => usuario.email==email);
 
     if(pass.length >= 5 ) {
@@ -79,6 +86,7 @@ loginBtn.addEventListener("click", function (event) {
     if (emailRegex.test(email) && longitudPermitida && usuarioEncontrado != undefined){
       advertencia.innerText='Ingresaste';
       main.setAttribute('style', 'background:black !important');
+      h1.setAttribute('style', 'color:white !important');
     } else {
       advertencia.innerText='Alguno de los datos ingresados son incorrectos';
     }
