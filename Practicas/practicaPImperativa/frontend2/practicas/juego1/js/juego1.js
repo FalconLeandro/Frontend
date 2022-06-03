@@ -10,7 +10,7 @@ alert(nombreUsuario + '?? nahh, me gustaría más... mmm... "Firulais", ' + nomb
 alert('Ok ' + nombreUsuario +  ' Firulais, las reglas son simples: el mejor de tres gana.')
 do {
     do {
-        let numUsuario = prompt("Elegí una opción " + nombreUsuario +  " Firulais:\n1. Piedra\n2. Papel\n3. Tijera                                           4. Salir");
+        let numUsuario = prompt("Elige un número " + nombreUsuario +  " Firulais:\n1. Piedra\n2. Papel\n3. Tijera                                           4. Salir");
         if (numUsuario == 1) {
             alert("Elegiste Piedra");
         } else if (numUsuario == 2) {
