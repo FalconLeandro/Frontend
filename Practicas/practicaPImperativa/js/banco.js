@@ -36,11 +36,13 @@ let arrayCuentas = [
 // nombre (titular) por parámetro, deberá buscarlo en la lista de cuentas y retornar el
 // objeto cliente que corresponda con ese nombre ingresado.
 // Ayuda: let clienteEncontrado = banco.consultarCliente(“Ramon Connell”);
+
 // 4. Crear otro método llamado depósito que recibirá dos parámetros: el titular de
 // cuenta y una cantidad de dinero a depositar. El método debe obtener la cuenta
 // correspondiente y luego sumar la cantidad de dinero a depositar a saldo en pesos.
 // Luego, deberá dar un aviso por la consola con el mensaje “Depósito realizado, su
 // nuevo saldo es: XXXX”.
+
 // 5. Crear un último método llamado extracción que recibirá también dos parámetros:
 // el titular de cuenta y el monto a extraer. El método debe obtener la cuenta
 // correspondiente y restar el monto al saldo actual. En caso de que el resultado sea
@@ -77,4 +79,6 @@ let arrayCuentas = [
   console.log(banco.deposito('Ansel Ardley', 500));
   console.log(banco.extracción('Ansel Ardley',32410));
   console.log(banco.extracción('Ansel Ardley',32410));
+
+  
 
