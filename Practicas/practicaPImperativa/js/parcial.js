@@ -323,3 +323,43 @@ function mayorMenor(arr) {
   
 }
 console.log(mayorMenor(edades));
+
+// Parte 1: Crear Mi Objeto
+
+// Crea un Objeto nave con las siguientes Propiedades y Valores:
+// Tipo de nave: Un String que diga "Espacial".
+// País: Un String que indique de qué país es la nave.
+// Cantidad de tripulantes: Un número que indique la cantidad de tripulantes de la nave.
+// Tripulantes: Un Arreglo con los nombres de los tripulantes.
+// País de los tripulantes: Un arreglo con nombres de los países de los tripulantes
+// Estado: Un String que diga "Usada".
+
+// Despegar:
+// a) Una Función que imprima en la consola el siguiente mensaje:
+// "🚀 ¡Todo listo para el despegue! 
+
+//  ¡algo se rompió!"
+// b) Y tire un Alert(ver que es un alert, si no lo conocen) que diga:
+// ¡BOOOM!
+// Parte 2: Acceso A Los Valores
+// Ahora desde la consola o su VSC seguí este paso a paso para extraer los valores del Objeto nave:
+
+// Extraé el país de la nave usando Dot notation.
+// Extraé el tipo de nave usando Bracket notation.
+// Extraé la cantidad de tripulantes usando Dot notation... ¿se puede?(pensar porque y dejar un comentario explicándolo)
+let nave = {
+  tipoDeNave:'Espacial',
+  pais:'Fiji',
+  cantidadTripulantes: 4,
+  tripulantes:['micu','leandroide','rosaura','lola'],
+  paísTripulantes:['Camerun', 'Noruega','Finlandia','Eslovaquia'],
+  estado:'usada',
+  despegar: function() {
+    console.log('🚀 ¡Todo listo para el despegue!\n¡algo se rompió!');
+    alert('¡Boooom!');
+  }
+
+}
+console.log(nave.pais);
+console.log(nave['tipoDeNave']);
+console.log(nave.cantidadTripulantes);
