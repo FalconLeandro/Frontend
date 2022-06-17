@@ -347,19 +347,216 @@ console.log(mayorMenor(edades));
 // Extraé el país de la nave usando Dot notation.
 // Extraé el tipo de nave usando Bracket notation.
 // Extraé la cantidad de tripulantes usando Dot notation... ¿se puede?(pensar porque y dejar un comentario explicándolo)
-let nave = {
-  tipoDeNave:'Espacial',
-  pais:'Fiji',
-  cantidadTripulantes: 4,
-  tripulantes:['micu','leandroide','rosaura','lola'],
-  paísTripulantes:['Camerun', 'Noruega','Finlandia','Eslovaquia'],
-  estado:'usada',
-  despegar: function() {
-    console.log('🚀 ¡Todo listo para el despegue!\n¡algo se rompió!');
-    alert('¡Boooom!');
-  }
+// let nave = {
+//   tipoDeNave:'Espacial',
+//   pais:'Fiji',
+//   cantidadTripulantes: 4,
+//   tripulantes:['micu','leandroide','rosaura','lola'],
+//   paísTripulantes:['Camerun', 'Noruega','Finlandia','Eslovaquia'],
+//   estado:'usada',
+//   despegar: function() {
+//     console.log('🚀 ¡Todo listo para el despegue!\n¡algo se rompió!');
+//     alert('¡Boooom!');
+//   }
 
+// }
+// console.log(nave.pais);
+// console.log(nave['tipoDeNave']);
+// console.log(nave.cantidadTripulantes);
+
+// Pares e Impares
+
+// Deben crear una función llamada paresEimpares 
+// que recibe 3 parámetros 
+// los dos primeros que sean números y el tercero una palabra (string) 
+// la función tiene que mostrar en la consola los números entre el cero y el primer parámetro que recibe 
+// pero debe en primer lugar mostrar todos los números pares 
+// y luego los impares 
+// además, cuando el número sea divisible por el segundo parámetro pasado a la función, en vez de loggearlo, debe imprimir la palabra que recibe como tercer parámetro. 
+
+function paresEimpares(num1,num2,str) {
+  for (let i = 0; i <= num1; i++) {
+    if (i%2==0 && i%num2==0) {
+      console.log(str);
+    }else if(i%2==0 && i%num2!=0){
+      console.log(i);
+    } 
+  }
+  for (let j = 0; j <= num1; j++) {
+    if (j%2!=0 && j%num2==0) {
+      console.log(str);
+    }else if(j%2!=0 && j%num2!=0){
+      console.log(j);
+    } 
+  }
 }
-console.log(nave.pais);
-console.log(nave['tipoDeNave']);
-console.log(nave.cantidadTripulantes);
+
+paresEimpares(10,7,'culo');
+
+// Ejemplo: 
+// paresEImpares(10,7,’prueba’)
+// ====> 
+// 0
+// 2
+// 4
+// 6
+// 8
+// 10
+// ("---------------------------------------------------")
+// 1
+// 3
+// 5
+// ’Prueba’
+// 9
+// /
+
+// / 
+// 2 - 
+
+// LOOP DE PARES
+// Debés crear una función llamada loopDePares que reciba como parámetro un número 
+
+// y haga un loop de 0 a 100 mostrando en la consola cada número del loop. 
+
+// En caso de que el número de la iteración sumado con el número pasado por parámetro, sea par, mostrará en la consola “El número x es par”.
+
+function loopDePares(num) {
+  for (let i = 0; i <= 100; i++) {
+    if ((i+num)%2==0) {
+      console.log('El número ' + (i+num) + ' es par');
+    } else {
+      console.log(i);
+    }
+    
+  }
+}
+loopDePares(5)
+
+// */
+// Les dejo también el siguiente ejercicio para que puedan volver a realizarlo:
+
+// De 3 en 3
+
+// Tenemos que crear una función 
+// que recibe tres parámetros: un número de comienzo, uno de final, y el ultimo va a servir de sumador.
+// Esta deberá retornar un arreglo con los numeros que esten entre el comienzo y el de final, sumando de a tanto como sea el sumador.
+//Ejemplo:
+
+//Sumador(1,10,3) => [1, 4, 7, 10]
+
+
+// 1) Del siguiente array de “ceros” tenemos un intruso, carácter que no es
+// “cero” (cero entre comillas)
+// ['0', '0', '0', '0', '0', 'O', '0', '0', '0']
+// nuestro trabajo será desarrollar una función que lo detecte
+// reemplazando por un “cero” y retorna él índice que se encontraba él
+// intruso
+
+let array = ['0', '0', 'O', '0', '0', 'O', '0', '0', 'O'];
+
+function detectorIntruso(arr) {
+  let intrusos = [];
+  console.log('Escaneando array...\n' + arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]!='0') {
+      console.log('Hay un intruso en la posicion ' + i); 
+      intrusos.push(i);
+      arr[i] = '0';
+    }
+  }
+  return '\nLos intrusos encontrado en las posiciones: ' + intrusos + ', han sido remplazados:\n' + arr;
+}
+console.log(detectorIntruso(array));
+// Dado los siguientes numeros:
+
+let num1 = 43;
+let num2 = 78;
+let num3 = 14;
+
+// Crea un algoritmo que te permita identificar
+// el numero mayor. Utiliza condicionales como el
+// if, else, o else if.
+
+// Escribe tu código debajo de estas lineas,
+// y observa los resultados por la consola.
+// especificamente para este conjunto de datos
+// deberias ver por consola el numero 78,
+// adicional, cambia los valores de num1, num2 y num3
+// para verificar que tu algoritmo funcione con
+// cualquiera 3 valores.
+// cualquiera 3 valores.
+function numMayor(num1,num2,num3){
+  let mayor;
+  if(num1>num2 && num1>num3){
+    mayor = num1;
+  }else if(num2>num1 && num2>num3){
+    mayor = num2;
+  }else{
+    mayor = num3;
+  }
+  return 'El número mayor es: ' + mayor;
+}
+console.log(numMayor(num1, num2, num3));
+// Ahora bien. dado los siguientes numeros:
+
+
+// agrega una variable mas, llamada num4
+// con un valor numerico
+
+// let num1 = 13.5;
+// let num2 = -1663;
+// let num3 = 333;
+// let num4 = 33;
+
+// Crea un algoritmo que te permita identificar
+// el numero mayor de los 4 anteriores.
+
+// Escribe tu código debajo de esta linea,
+// y observa los resultados por la consola.
+// Adicional, cambia los valores de los 4 numeros
+// para ver que algoritmo funciona con cualquier
+// conjunto de 4 numeros.
+function numMayor(num1, num2, num3,num4) {
+  let mayor;
+  if (num1 > num2 && num1 > num3 && num1 > num4) {
+    mayor = num1;
+  } else if (num2 > num1 && num2 > num3 && num2 > num4) {
+    mayor = num2;
+  } else if (num3 > num1 && num3 > num2 && num3 > num4) {
+    mayor = num3;
+  } else {
+    mayor = num4;
+  }
+  return 'El número mayor es: ' + mayor;
+}
+console.log(numMayor(num1, num2, num3, num4));
+
+/**
+ * Extra: que puedes hacer para identificar
+ * el numero mayor de una lista de numeros,
+ * como la siguiente? Utiliza Javascript.
+ *
+ * Tip: es valido buscar en google :)
+ *
+ * Adicional: al terminar tu algoritmo,
+ * cambia los valores de la lista, bien sea
+ * agregando o removiendo, y asegurate
+ * que tu algoritmo funcione con cualquier lista
+ * de numeros
+ */
+
+const numeros = [5, 12, 2, 40, 33, 2, 8];
+
+
+function mayor(arr){
+  
+  let mayor = arr[0];
+  for(let i = 0; i <= arr.length; i++ ){
+    if (arr[i+1]>mayor){
+      mayor = arr[i+1];
+
+    }
+  };
+  return mayor;
+}
+console.log(mayor(numeros)); 
