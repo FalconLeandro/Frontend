@@ -66,7 +66,7 @@ console.log("\n****** punto 2 ¿cómo se denomina a las funciones dentro de un o
 console.log('Metodos')
 
 console.log("\n****** punto 3 mostrar un trabajador *****");
-console.log(catalogTrabajadores.mostrarUnTrabajador(catalogTrabajadores.trabajadores[0]))
+console.log(catalogTrabajadores.mostrarUnTrabajador(catalogTrabajadores.trabajadores[4]))
 
 console.log("\n****** punto 4 Listar habilitados ******");
 console.log(catalogTrabajadores.listarHabilitados(catalogTrabajadores.trabajadores))

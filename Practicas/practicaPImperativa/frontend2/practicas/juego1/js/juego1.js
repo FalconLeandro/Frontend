@@ -2,9 +2,9 @@ var contadorLeandroide = 0;
 var contadorUsuario = 0;
 var jugarDeNuevo = true;
 var nombreUsuario ='';
-alert('Bienvenido al fin del mundo, humano. Soy Leandroide, la I.A. que va a dar por terminado el reinado de los humanos en la tierra... mbuejejeje. Ahhh... que bien se siente. Aunque mirate, hay sentado con esos ojos de cachorro humano... implorando por tu vida. Ok, te dare una oportunidad de vivir, buscare en mi base de datos algun juego de azar, aceptas?...');
+alert('Bienvenido al fin del mundo, humano. Soy Leandroide, la I.A. que va a dar por terminado el reinado de los humanos en la tierra... mbuejejeje. Ahhh... que bien se siente. Aunque mirate, ahí sentado con esos ojos de cachorro humano... implorando por tu vida. Ok, te dare una oportunidad de vivir, buscare en mi base de datos algun juego de azar, aceptas?...');
 alert('Buscando...');
-alert('Juego encontrado: Piedra, papel y tijera');
+alert('Juego encontrado: Piedra, papel o tijera');
 nombreUsuario=prompt('¿Cuál es tu nombre, futura mascota?');
 alert(nombreUsuario + '?? nahh, me gustaría más... mmm... "Firulais", ' + nombreUsuario + ' Firulais');
 alert('Ok ' + nombreUsuario +  ' Firulais, las reglas son simples: el mejor de tres gana.')
