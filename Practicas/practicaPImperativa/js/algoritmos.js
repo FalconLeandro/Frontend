@@ -1,4 +1,5 @@
-// * Escribir un programa que muestre por consola
+//  1)
+//  * Escribir un programa que muestre por consola
 //  * los números del 1 al 100, sustituyendo los
 //  * múltiplos de 3 por la palabra “fizz”,
 //  * los múltiplos de 5 por “buzz” y los múltiplos
@@ -32,10 +33,10 @@
 // let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 // var index = 1;
 
-// function mostrarValor(indice) {
+// function mostrarValor(arr,indice) {
 //      console.log(array[indice]);
 // };
-// mostrarValor(index);
+// mostrarValor(array,index);
 
 // 3) Escribir una función que, dado un número de mes, devuelva la cantidad
 // de días de ese mes —suponiendo que no es un año bisiesto—.
@@ -62,12 +63,12 @@
 //     }
 //     return parseInt(arrayInvertido.join(''));
 // }
-// console.log(invertir(32443));
+// console.log(invertir(245278));
 
 // 5) Escribir una función que reciba una array y solo imprima los valores que
 // se repiten. Por ejemplo, dada la siguiente array e índice, la función
 // imprimirá '6,23,33,100'.
-let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
+// let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 
 // El método sort() puede ordenar valores negativos, cero y positivos en el orden correcto. Cuando compara dos valores, los envía a nuestra función de comparación y luego ordena los valores de acuerdo al resultado devuelto.
 
@@ -77,12 +78,12 @@ let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 
 // Si queremos ordenar los números en orden descendente, esta vez necesitamos restar el segundo parámetro (b) del primero (a)
 
-function numRepetidos(arr) {
-    arr.sort(function(a, b){return a - b});
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == arr[i+1]) {
-            console.log(arr[i]);
-        }
-    }
-}
-numRepetidos(array);
+// function numRepetidos(arr) {
+//     arr.sort(function(a, b){return a - b});
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] == arr[i+1]) {
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+// numRepetidos(array);
