@@ -1,9 +1,10 @@
-// // * Escribir un programa que muestre por consola
-// //  * los números del 1 al 100, sustituyendo los
-// //  * múltiplos de 3 por la palabra “fizz”,
-// //  * los múltiplos de 5 por “buzz” y los múltiplos
-// //  * de ambos, es decir, los múltiplos de 3 y 5
-// //  * (o de 15), por la palabra “fizzbuzz”.
+//  1)
+//  * Escribir un programa que muestre por consola
+//  * los números del 1 al 100, sustituyendo los
+//  * múltiplos de 3 por la palabra “fizz”,
+//  * los múltiplos de 5 por “buzz” y los múltiplos
+//  * de ambos, es decir, los múltiplos de 3 y 5
+//  * (o de 15), por la palabra “fizzbuzz”.
 
 // // function fizzBuzz() {
 // //     for (let i = 1; i <= 100; i++) {
@@ -70,6 +71,10 @@
 // let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 
 // // El método sort() puede ordenar valores negativos, cero y positivos en el orden correcto. Cuando compara dos valores, los envía a nuestra función de comparación y luego ordena los valores de acuerdo al resultado devuelto.
+// function mostrarValor(arr,indice) {
+//      console.log(array[indice]);
+// };
+// mostrarValor(array,index);
 
 // // Si el resultado es negativo, a se ordena antes que b.
 // // Si el resultado es positivo, b se ordena antes de a.
@@ -88,6 +93,12 @@
 // numRepetidos(array);
 
 // //BUBLE SORT:
+// console.log(invertir(245278));
+
+// 5) Escribir una función que reciba una array y solo imprima los valores que
+// se repiten. Por ejemplo, dada la siguiente array e índice, la función
+// imprimirá '6,23,33,100'.
+// let array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 
 // let numeros = [6,5,1,2,4,3,8,7];
 
@@ -185,3 +196,12 @@ día. Las temperaturas —objeto temperatura— están cargados en un array.
 a) Ordenar por temperatura mínima de menor a mayor.
 b) Ordenar por temperatura máxima de mayor a menor.*/
 
+// function numRepetidos(arr) {
+//     arr.sort(function(a, b){return a - b});
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] == arr[i+1]) {
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+// numRepetidos(array);
