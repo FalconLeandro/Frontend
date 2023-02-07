@@ -1,5 +1,4 @@
-var a= "caca";
-console.log(a);
+
 particlesJS("particle-container", {
   "particles": {
     "number": {
