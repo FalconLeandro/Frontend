@@ -17,16 +17,16 @@ window.addEventListener("click", function (event) {
 
 let modalesContenido = [{
   id: 1,
-  title: 'Pet Shop',
-  text: 'laudantium enim quasi est quidem magnam voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  title: 'Pet-Shop \n Proyecto Integrador',
+  text: 'Acá aprendí animaciones',
   image: './images/capturaPetShop.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">js</span>', '<span class="techs">css</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/PetShop/index.html',
   linkGithub: './LemonPie/index.html'
 }, {
   id: 2,
-  title: 'Examen',
-  text: ' magnam voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  title: 'Examen Integrador',
+  text: 'Acá integré los conceptos vistos.',
   image: './images/capturaExamen.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/ExamenPracticoFinal-FE1-LeandroFalcon/index.html',
@@ -34,7 +34,7 @@ let modalesContenido = [{
 }, {
   id: 3,
   title: 'Heroes',
-  text: ' quidem magnam voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  text: 'En este trabajo aprendí el maquetado de formularios y algunas funcionalidades con javaScript.',
   image: './images/capturaHeroes.PNG',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/Heroes/index.html',
@@ -42,7 +42,7 @@ let modalesContenido = [{
 }, {
   id: 4,
   title: 'Pizzeria',
-  text: ' voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  text: 'Acá descubrí la practicidad de flexbox.',
   image: './images/capturaPizzeria.png',
   linkSitioWeb: '',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>'],
@@ -51,7 +51,7 @@ let modalesContenido = [{
 }, {
   id: 5,
   title: 'Batman',
-  text: ' magnam voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  text: 'En este trabajo conocí las hojas de estilo en css y su implementación.',
   image: './images/capturaBatmanCv.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/Cv/index.html',
@@ -59,7 +59,7 @@ let modalesContenido = [{
 }, {
   id: 6,
   title: 'Lemon Pie',
-  text: ' magnam voluptate …utem quasi\nreiciendis et nam sapiente accusantium',
+  text: ' En este trabajo aprendí a maquetar en HTML y a aplicar estilos en linea',
   image: './images/capturaLemonPie.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/LemonPie/index.html',
