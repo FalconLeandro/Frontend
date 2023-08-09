@@ -89,17 +89,16 @@ function atraparIdCardClickeada() {
             <div class="contenedor-modal-descripcion">
                 <h2 class="modal-descripcion-titulo">${modalesContenido[i].title}</h2>
                 <p>${modalesContenido[i].text}</p>
-                
                 <div>
                   ${modalesContenido[i].techList}
                 </div>
             </div>
             <div class="contenedor-modal-preview">
-                <img class="${id == 6 || id == 4 || id == 5 ? 'animacion-none' : ' '}" src="${modalesContenido[i].image}"/>
+                <img class="${id == 6 || id == 4 || id == 5 ? 'animacion-none' : ''}" src="${modalesContenido[i].image}"/>
                 <div id="modal-preview-shadow"></div>
                 <div class="modal-preview-enlaces">
                     <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">GitHub</a>
-                    <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">Web Site</a>
+                    <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">Deploy</a>
                 </div>
             </div>
           `
